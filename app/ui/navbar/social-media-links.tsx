@@ -8,15 +8,14 @@ export default function SocialMediaLinks() {
   return (
     <>
       {socialMediaData.map((link) => {
-        const LinkIcon = link.icon;
         return (
           <Link
             key={link.name}
             href={link.href}
-            className={'flex grow items-center gap-2 rounded-md p-2 text-sm font-medium hover:bg-gradient-1 '}
+            className={'flex grow items-center gap-2 rounded-md p-2 text-sm font-medium hover:bg-gradient-6 '}
           >
             <Image 
-                src={LinkIcon}
+                src={link.icon!}
                 width={32}
                 height={32}
                 alt={link.name}

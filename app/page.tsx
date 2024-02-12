@@ -1,8 +1,16 @@
+import BriefDescription from "./ui/home/brief-description";
+import MyStack from "./ui/home/my-stack";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col p-6">
-      <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
-        <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
+    <main className="flex justify-center">
+      <div className="flex flex-col p-6 w-7/12">
+        <BriefDescription />
+        <div className="flex flex-col text-center pt-10">
+          <p className="text-4xl py-8">My Stack</p>
+          <div className="flex flex-row justify-evenly gap-24">
+            <MyStack />
+          </div>
         </div>
       </div>
     </main>

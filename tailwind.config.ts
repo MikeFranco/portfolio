@@ -15,13 +15,16 @@ const config: Config = {
       },
     },
     colors: {
-      'gradient':{
+      'gradient': {
         1: '#129BEE',
         2: '#5E88DB',
         3: '#7C75C2',
         4: '#8B63A6',
         5: '#915389',
         6: '#8D476D',
+      },
+      'stone':{
+        500: '#78716c'
       },
       'white': '#FFFFFF',
       'black': '#000000',
