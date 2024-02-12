@@ -8,9 +8,7 @@ export default function Home() {
       <div className="flex flex-col p-6 w-7/12">
         <BriefDescription />
         <MyStack />
-        <div className="flex flex-col text-center pt-10">
-          <Education />
-        </div>
+        <Education />
       </div>
     </main>
   );
