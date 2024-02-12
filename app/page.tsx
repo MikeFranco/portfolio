@@ -1,4 +1,5 @@
 import BriefDescription from "./ui/home/brief-description";
+import Education from "./ui/home/education";
 import MyStack from "./ui/home/my-stack";
 
 export default function Home() {
@@ -6,11 +7,9 @@ export default function Home() {
     <main className="flex justify-center">
       <div className="flex flex-col p-6 w-7/12">
         <BriefDescription />
+        <MyStack />
         <div className="flex flex-col text-center pt-10">
-          <p className="text-4xl py-8">My Stack</p>
-          <div className="flex flex-row justify-evenly gap-24">
-            <MyStack />
-          </div>
+          <Education />
         </div>
       </div>
     </main>
