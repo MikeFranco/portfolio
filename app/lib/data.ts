@@ -1,4 +1,4 @@
-import { IFeaturedProjects, IMyStack, INavItems, ISocialMedia } from './types';
+import { IFeaturedProjects, IMyStack, INavItems, ISocialMedia, IStepperData, IWorkData } from './types';
 
 export const socialMediaData: ISocialMedia[] = [
   { name: 'GitHub', href: '/', icon: '/github.svg' },
@@ -103,5 +103,115 @@ export const featuredProjects: IFeaturedProjects[] = [
     description:
       'Asistensi is a comprehensive assistance service designed to provide support and guidance in various aspects of life. From personalized assistance with tasks and problem-solving to offering valuable advice, Asistensi aims to enhance and simplify the daily lives of its users.',
     path: 'joyapp',
+  },
+];
+
+export const workData: IWorkData[] = [
+  {
+    icon: '/joyapp-logo.png',
+    company: 'Pepsi',
+    projectType: 'App',
+    description:
+      'The Joy App by PepsiCo offers seamless access to PepsiCo products, promotions, and rewards, aiming to enhance customer engagement and satisfaction.',
+    isBlurred: false,
+  },
+  {
+    icon: '/walmart-logo.svg',
+    company: 'Walmart',
+    projectType: 'App',
+    description:
+      'Global retail giant offering a wide range of products including groceries, household goods, electronics, and apparel at competitive prices through its extensive network of stores and online platforms.',
+    isBlurred: false,
+  },
+  {
+    icon: '/gulf-logo.png',
+    company: 'Gulf',
+    projectType: 'Web',
+    description:
+      'Gulf is a multinational company specializing in energy, petroleum refining, and related services. It operates across various sectors, including oil exploration, production, refining, and distribution.',
+    isBlurred: false,
+  },
+  {
+    icon: '/pentalog-logo.webp',
+    company: 'Pentalog',
+    projectType: 'Web',
+    description:
+      'Pentalog is a global digital services platform offering end-to-end IT solutions, including software development, consulting, and digital transformation services.',
+    isBlurred: false,
+  },
+  {
+    icon: '/asistensi-logo.svg',
+    company: 'Asistensi',
+    projectType: 'App',
+    description:
+      'Innovative platform connecting users with personalized, on-demand assistance services such as ambulance, medicine delivery and online medical assistance',
+    isBlurred: false,
+  },
+  {
+    icon: '/kavak-logo.svg',
+    company: 'Kavak',
+    projectType: 'App',
+    description:
+      'Premier platform for transparent, hassle-free buying and selling of pre-owned cars. Trusted by individuals and dealerships for its reliability and streamlined experience.',
+    isBlurred: false,
+  },
+  {
+    icon: '/am-logo.jpeg',
+    company: 'Advanced Mankind',
+    projectType: 'App',
+    description:
+      'AM offer expert guidance for optimizing technology infrastructure and processes, including strategic planning, system design, software development, and project management.',
+    isBlurred: false,
+  },
+  {
+    icon: '/axend-logo.png',
+    company: 'Axend',
+    projectType: 'Web',
+    description:
+      'Axend is a platform dedicated to fostering growth for individuals and businesses through investments.',
+    isBlurred: false,
+  },
+];
+
+export const stepperData: IStepperData[] = [
+  {
+    date: 'September 15 2023',
+    description: 'Started working with PepsiCo for the Joy App',
+    icon: '/work.svg',
+  },
+  {
+    date: 'August 31 2023',
+    description: "Finished Gulf's project",
+    icon: '/work.svg',
+  },
+  {
+    date: 'June 1 2023',
+    description: 'Started my first freelance project with Gulf',
+    icon: '/work.svg',
+  },
+  {
+    date: 'February 28 2023',
+    description: 'Finished all my subjects as a Computer Engineer',
+    icon: '/school.svg',
+  },
+  {
+    date: 'August 15 2022',
+    description: 'Belog to the top 5% of programmers at Pentalog (2021-2022)',
+    icon: '/award.svg',
+  },
+  {
+    date: 'February 1 2021',
+    description: 'Started working as a Mobile Developer',
+    icon: '/work.svg',
+  },
+  {
+    date: 'February 1 2019',
+    description: 'Started working as a Web Developer',
+    icon: '/work.svg',
+  },
+  {
+    date: 'December 12 2018',
+    description: '3rd place at Local Hack Day by Github',
+    icon: '/award.svg',
   },
 ];
