@@ -3,8 +3,8 @@
 import Image from 'next/image';
 import clsx from 'clsx';
 import { useRouter } from 'next/navigation';
-import { workData } from '@/app/lib/data';
 import { useState } from 'react';
+import { workData } from '@/app/lib/projects/data';
 
 const ProjectCard = () => {
   const [cardHovered, setCardHovered] = useState<number>(-1);

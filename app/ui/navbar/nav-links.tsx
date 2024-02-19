@@ -1,9 +1,9 @@
 'use client';
 
+import { navItemsData } from '@/app/lib/navbar/data';
 import clsx from 'clsx';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { navItemsData } from '@/app/lib/data';
 
 export default function NavLinks() {
   const pathname = usePathname();
