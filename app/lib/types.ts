@@ -27,11 +27,20 @@ export interface IFeaturedProjects {
 }
 
 export interface IWorkData {
-  icon: string;
+  image: string;
   company: string;
   projectType: string;
   description: string;
   isBlurred: boolean;
+  startDate: string;
+  endDate: string;
+  cardDescription: string;
+  whatIHaveDone: string;
+  workScheme: 'hybrid' | 'remote' | 'on-site'
+  jobTitle: string;
+  stack: string[];
+  projectName: string;
+  images: string[]
 }
 
 export interface IStepperData {
