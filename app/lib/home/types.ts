@@ -1,11 +1,3 @@
-export interface IMyStack {
-  header: string;
-  items: {
-    name: string;
-    icon: string;
-  }[];
-}
-
 export interface IFeaturedProjects {
   image: string;
   backgroundColor: string;

@@ -1,65 +1,65 @@
-import { IFeaturedProjects, IMyStack } from "./types";
+import { IFeaturedProjects } from './types';
 
-export const myStack: IMyStack[] = [
-  {
+export const myStack: Record<string, { header: string; technologies: Record<string, string> }> = {
+  LANGUAGES: {
     header: 'LANGUAGES',
-    items: [
-      { name: 'JavaScript', icon: '/javascript.svg' },
-      { name: 'TypeScript', icon: '/typescript.svg' },
-      { name: 'Dart', icon: '/dart.svg' },
-    ],
+    technologies: {
+      JavaScript: '/javascript.svg',
+      TypeScript: '/typescript.svg',
+      Dart: '/dart.svg',
+    },
   },
-  {
+  FRONTEND: {
     header: 'FRONTEND',
-    items: [
-      { name: 'HTML', icon: '/html.svg' },
-      { name: 'CSS', icon: '/css.svg' },
-      { name: 'Nuxt JS', icon: '/nuxtjs.svg' },
-      { name: 'VueJS', icon: '/vuejs.svg' },
-      { name: 'Svelte', icon: '/svelte.svg' },
-      { name: 'React', icon: '/react.svg' },
-      { name: 'Angular', icon: '/angular.svg' },
-      { name: 'React Native', icon: '/react.svg' },
-      { name: 'Flutter', icon: '/flutter.svg' },
-    ],
+    technologies: {
+      HTML: '/html.svg',
+      CSS: '/css.svg',
+      'Nuxt JS': '/nuxtjs.svg',
+      VueJS: '/vuejs.svg',
+      Svelte: '/svelte.svg',
+      React: '/react.svg',
+      Angular: '/angular.svg',
+      'React Native': '/react.svg',
+      Flutter: '/flutter.svg',
+    },
   },
-  {
+  BACKEND: {
     header: 'BACKEND',
-    items: [
-      { name: 'Node', icon: '/nodejs.svg' },
-      { name: 'GraphQL', icon: '/graphql.svg' },
-      { name: 'TypeORM', icon: '/typeorm.svg' },
-      { name: 'MySQL', icon: '/mysql.svg' },
-      { name: 'MongoDB', icon: '/mongodb.svg' },
-      { name: 'Firebase', icon: '/firebase.svg' },
-    ],
+    technologies: {
+      Node: '/nodejs.svg',
+      GraphQL: '/graphql.svg',
+      TypeORM: '/typeorm.svg',
+      MySQL: '/mysql.svg',
+      MongoDB: '/mongodb.svg',
+      Firebase: '/firebase.svg',
+    },
   },
-  {
+  CLOUD: {
     header: 'CLOUD',
-    items: [
-      { name: 'GCP', icon: '/googlecloudplatform.svg' },
-      { name: 'Docker', icon: '/docker.svg' },
-      { name: 'Heroku', icon: '/heroku.svg' },
-    ],
+    technologies: {
+      GCP: '/googlecloudplatform.svg',
+      Docker: '/docker.svg',
+      Heroku: '/heroku.svg',
+    },
   },
-  {
+  'UI LIBRARIES': {
     header: 'UI LIBRARIES',
-    items: [
-      { name: 'Tailwind', icon: '/tailwindcss.svg' },
-      { name: 'Ant Design', icon: '/antdesign.svg' },
-      { name: 'BootStrap', icon: '/bootstrap.svg' },
-      { name: 'Material Design', icon: '/materialdesign.svg' },
-      { name: 'Vuetify', icon: '/vuetify.svg' },
-    ],
+    technologies: {
+      Tailwind: '/tailwindcss.svg',
+      'Ant Design': '/antdesign.svg',
+      BootStrap: '/bootstrap.svg',
+      'Material Design': '/materialdesign.svg',
+      Vuetify: '/vuetify.svg',
+    },
   },
-  {
+  'DATA ANALYSIS': {
     header: 'DATA ANALYSIS',
-    items: [
-      { name: 'Looker Studio', icon: '/lookerstudio.svg' },
-      { name: 'AppsFlyer', icon: '/appsflyer.svg' },
-    ],
+    technologies: {
+      'Looker Studio': '/lookerstudio.svg',
+      AppsFlyer: '/appsflyer.svg',
+    },
   },
-];
+};
 
 export const featuredProjects: IFeaturedProjects[] = [
   {
