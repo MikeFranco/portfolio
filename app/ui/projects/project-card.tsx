@@ -4,7 +4,7 @@ import Image from 'next/image';
 import clsx from 'clsx';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
-import { workData } from '@/app/lib/projects/data';
+import { projectsData } from '@/app/lib/projects/data';
 
 const ProjectCard = () => {
   const [cardHovered, setCardHovered] = useState<number>(-1);
@@ -20,7 +20,7 @@ const ProjectCard = () => {
 
   return (
     <>
-      {workData.map((card, index) => (
+      {projectsData.map((card, index) => (
         <div
           className={clsx(
             'custom-card bg-slate-900 flex p-3 rounded-lg sm:w-1/2 md:w-1/5 text-justify cursor-pointer md:max-h-40',

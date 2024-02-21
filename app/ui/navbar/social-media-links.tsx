@@ -1,7 +1,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { socialMediaData } from '@/app/lib/data';
+import { socialMediaData } from '@/app/lib/navbar/data';
 
 export default function SocialMediaLinks() {
 

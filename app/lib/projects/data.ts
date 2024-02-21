@@ -1,8 +1,9 @@
-import { IStepperData, IWorkData } from "./types";
+import { IStepperData, IProjectsData } from './types';
+import { myStack } from '../home/data';
 
-export const workData: IWorkData[] = [
+export const projectsData: IProjectsData[] = [
   {
-    image: '/joyapp-logo.png',
+    image: '/pepsi-logo.png',
     company: 'Pepsi',
     projectType: 'App',
     cardDescription:
@@ -10,15 +11,22 @@ export const workData: IWorkData[] = [
     isBlurred: false,
     startDate: 'september 2023',
     endDate: 'present',
-    description:
+    overview:
       'Do incididunt culpa laborum in amet culpa ut cillum exercitation qui duis qui irure. Aute commodo veniam enim voluptate id reprehenderit deserunt eiusmod. Dolore tempor aute tempor aliquip laborum pariatur sint. Et eu cupidatat aute aliqua dolor sit reprehenderit qui cupidatat enim voluptate magna est officia. Ullamco Lorem ea ad officia proident velit qui elit exercitation.',
     whatIHaveDone:
       'Implemented Firebase remote config for dynamic updates and personalized experiences. Added deep links and events to support marketing campaigns and user redirection. Enhanced UX/UI across all screens for a cohesive interface. Addressed bugs and improved app stability using Firebase Crashlytics.',
-    workScheme: 'remote',
+    workScheme: 'Remote',
     jobTitle: 'Software Engineer Assoc Manager',
-    stack: ['Dart', 'Flutter', 'Firebase', 'Appsflyer'],
+    stack: [
+      myStack.languages.technologies.Dart,
+      myStack.frontend.technologies.Flutter,
+      myStack.backend.technologies.Firebase,
+      myStack.dataAnalysis.technologies.AppsFlyer,
+    ],
     projectName: 'Joy App',
-    images: [],
+    images: ['/joyapp-0.webp', '/joyapp-old-1.webp', '/joyapp-old-2.webp', '/joyapp-old-3.webp'],
+    aboutTheProject:
+      'Fugiat dolore nulla incididunt proident pariatur fugiat laboris esse in proident irure minim id. Aute culpa deserunt velit pariatur reprehenderit incididunt veniam excepteur sunt id esse sit sint. Enim cupidatat laborum cupidatat ad officia. Ad magna ad quis et minim dolore tempor labore sit. Eiusmod pariatur cupidatat voluptate irure aliquip et adipisicing cupidatat aliqua eu ad veniam qui.',
   },
   {
     image: '/walmart-logo.svg',
@@ -29,13 +37,15 @@ export const workData: IWorkData[] = [
     isBlurred: false,
     startDate: 'august 2023',
     endDate: 'january 2024',
-    description: '',
+    overview: '',
     whatIHaveDone: '',
-    workScheme: 'remote',
+    workScheme: 'Remote',
     jobTitle: 'Freelance Software Engineer UP',
     stack: ['TypeScript', 'React Native', 'React Native CLI', 'micro-frontends'],
     projectName: 'Me@Walmart International',
-    images: [],
+    images: ['/me-at-walmart-0.webp', '/me-at-walmart-1.webp', '/me-at-walmart-2.webp'],
+    aboutTheProject:
+      'Aliqua magna velit anim Lorem ea non et irure quis ut dolore fugiat quis in. Qui laboris aliqua minim tempor eu commodo amet magna voluptate. Proident ipsum et ex ea enim ea officia ad ea anim laborum est do. Nulla velit nulla excepteur eiusmod cillum consequat. Dolor esse elit reprehenderit amet exercitation ut culpa duis labore do sint exercitation.',
   },
   {
     image: '/gulf-logo.png',
@@ -46,13 +56,15 @@ export const workData: IWorkData[] = [
     isBlurred: false,
     startDate: 'june 2023',
     endDate: 'august 2023',
-    description: '',
+    overview: '',
     whatIHaveDone: '',
-    workScheme: 'remote',
+    workScheme: 'Remote',
     jobTitle: 'Freelance Lead Developer',
     stack: ['TypeScript', 'Angular', 'NodeJs', 'TypeORM'],
     projectName: 'Gulf',
-    images: [],
+    images: ['/me-at-walmart-0.webp', '/me-at-walmart-1.webp', '/me-at-walmart-2.webp'],
+    aboutTheProject:
+      'Proident deserunt sunt velit excepteur mollit sunt qui sit. Voluptate incididunt ut proident reprehenderit est reprehenderit ullamco ipsum aliqua ad occaecat ad. Ad reprehenderit aliquip ea laboris et in minim occaecat aute veniam. Fugiat tempor ut proident ex deserunt qui laboris. Pariatur aliquip id dolore veniam labore est voluptate ea. Quis culpa sint eu exercitation in id commodo. Pariatur consequat id adipisicing est culpa sunt anim qui.',
   },
   {
     image: '/pentalog-logo.webp',
@@ -63,13 +75,15 @@ export const workData: IWorkData[] = [
     isBlurred: false,
     startDate: 'august 2021',
     endDate: 'august 2023',
-    description: '',
+    overview: '',
     whatIHaveDone: '',
-    workScheme: 'remote',
+    workScheme: 'Remote',
     jobTitle: 'Software Engineer',
     stack: ['TypeScript', 'React', 'Ant Design', 'GraphQL'],
     projectName: 'Noodle',
-    images: [],
+    images: ['/me-at-walmart-0.webp', '/me-at-walmart-1.webp', '/me-at-walmart-2.webp'],
+    aboutTheProject:
+      'Laborum veniam ex nulla duis voluptate anim pariatur occaecat anim voluptate est velit non est. Magna aliquip sint aliqua id Lorem velit sunt proident magna. Excepteur ad commodo ullamco eiusmod ut adipisicing aliquip Lorem magna aute id Lorem occaecat consectetur. Laborum consequat dolor esse nisi excepteur et anim ipsum do enim exercitation eiusmod enim. Fugiat elit reprehenderit cillum tempor et.',
   },
   {
     image: '/asistensi-logo.svg',
@@ -80,13 +94,15 @@ export const workData: IWorkData[] = [
     isBlurred: false,
     startDate: 'june 2022',
     endDate: 'april 2023',
-    description: '',
+    overview: '',
     whatIHaveDone: '',
-    workScheme: 'remote',
+    workScheme: 'Remote',
     jobTitle: 'Mobile Developer',
     stack: ['TypeScript', 'React Native', 'Tailwind CSS'],
     projectName: 'Joy App',
-    images: [],
+    images: ['/asistensi-0.webp', '/asistensi.png', '/asistensi-2.webp', '/asistensi-3.webp'],
+    aboutTheProject:
+      'Minim anim officia tempor eiusmod laborum magna. Excepteur incididunt minim ullamco consectetur ex nostrud dolor proident aliqua nostrud cupidatat. Velit veniam ullamco ullamco officia nostrud.',
   },
   {
     image: '/kavak-logo.svg',
@@ -97,13 +113,15 @@ export const workData: IWorkData[] = [
     isBlurred: false,
     startDate: 'august 2021',
     endDate: 'june 2022',
-    description: '',
+    overview: '',
     whatIHaveDone: '',
-    workScheme: 'remote',
+    workScheme: 'Remote',
     jobTitle: 'Software Engineer Assoc Manager',
     stack: ['TypeScript', 'GraphQL', 'Angular', 'DataDog'],
     projectName: 'Joy App',
-    images: [],
+    images: ['/kavak-0.webp', '/kavak-1.webp', '/kavak-2.webp'],
+    aboutTheProject:
+      'In laboris exercitation cillum nisi enim cillum non magna do mollit. Qui ad officia do deserunt. Elit anim ex ipsum eu magna ex deserunt cupidatat officia minim culpa enim sit.',
   },
   {
     image: '/am-logo.jpeg',
@@ -114,9 +132,9 @@ export const workData: IWorkData[] = [
     isBlurred: false,
     startDate: 'july 2020',
     endDate: 'january 2022',
-    description: '',
+    overview: '',
     whatIHaveDone: '',
-    workScheme: 'remote',
+    workScheme: 'Remote',
     jobTitle: 'FullStack Developer',
     stack: [
       'TypeScript',
@@ -134,7 +152,9 @@ export const workData: IWorkData[] = [
       'MySQL',
     ],
     projectName: 'Xybrid',
-    images: [],
+    images: ['/chedraui-0.webp', '/chedraui-1.webp', '/chedraui-2.webp', '/chedraui-3.webp'],
+    aboutTheProject:
+      'Aute cupidatat quis mollit culpa. Et incididunt est magna minim id fugiat commodo reprehenderit. Ipsum adipisicing qui aute laborum. Do id exercitation dolore minim mollit qui amet tempor ipsum excepteur consectetur reprehenderit ea.',
   },
   {
     image: '/axend-logo.png',
@@ -145,13 +165,15 @@ export const workData: IWorkData[] = [
     isBlurred: false,
     startDate: 'february 2019',
     endDate: 'february 2021',
-    description: 'descripción chida y mamalona',
+    overview: 'descripción chida y mamalona',
     whatIHaveDone: '',
-    workScheme: 'remote',
+    workScheme: 'Hybrid',
     jobTitle: 'Chief Technology Officer & Full Stack Developer',
     stack: ['JavaScript', 'NuxtJs', 'VueJs', 'NodeJs', 'Express', 'Google Cloud Platform'],
     projectName: 'Axend webapp',
-    images: [],
+    images: ['/axend-0.png', '/axend.png', '/axend-2.png', '/axend-3.png'],
+    aboutTheProject:
+      'Proident commodo mollit do officia occaecat sit excepteur fugiat excepteur proident laborum dolor labore esse. Dolore veniam ad dolor non in nostrud duis ad. Est dolor laborum ipsum est est qui et.',
   },
 ];
 

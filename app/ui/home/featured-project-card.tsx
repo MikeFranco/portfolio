@@ -1,6 +1,7 @@
-import { featuredProjects } from '@/app/lib/data';
-import { IFeaturedProjects } from '@/app/lib/types';
+
 import Image from 'next/image';
+import { IFeaturedProjects } from '@/app/lib/home/types';
+import { featuredProjects } from '@/app/lib/home/data';
 
 const FeaturedProjectCard = () => (
   <>

@@ -1,5 +1,5 @@
+import { stepperData } from '@/app/lib/projects/data';
 import Image from 'next/image';
-import { stepperData } from '@/app/lib/data';
 
 const Changelog = () => {
   return (

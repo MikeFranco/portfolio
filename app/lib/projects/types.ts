@@ -1,18 +1,19 @@
-export interface IWorkData {
+export interface IProjectsData {
   image: string;
   company: string;
   projectType: string;
-  description: string;
+  overview: string;
   isBlurred: boolean;
   startDate: string;
   endDate: string;
   cardDescription: string;
   whatIHaveDone: string;
-  workScheme: 'hybrid' | 'remote' | 'on-site';
+  workScheme: 'Hybrid' | 'Remote' | 'On site';
   jobTitle: string;
   stack: string[];
   projectName: string;
   images: string[];
+  aboutTheProject: string;
 }
 
 export interface IStepperData {

@@ -1,7 +1,7 @@
 import { IFeaturedProjects } from './types';
 
 export const myStack: Record<string, { header: string; technologies: Record<string, string> }> = {
-  LANGUAGES: {
+  languages: {
     header: 'LANGUAGES',
     technologies: {
       JavaScript: '/javascript.svg',
@@ -9,7 +9,7 @@ export const myStack: Record<string, { header: string; technologies: Record<stri
       Dart: '/dart.svg',
     },
   },
-  FRONTEND: {
+  frontend: {
     header: 'FRONTEND',
     technologies: {
       HTML: '/html.svg',
@@ -23,7 +23,7 @@ export const myStack: Record<string, { header: string; technologies: Record<stri
       Flutter: '/flutter.svg',
     },
   },
-  BACKEND: {
+  backend: {
     header: 'BACKEND',
     technologies: {
       Node: '/nodejs.svg',
@@ -34,7 +34,7 @@ export const myStack: Record<string, { header: string; technologies: Record<stri
       Firebase: '/firebase.svg',
     },
   },
-  CLOUD: {
+  cloud: {
     header: 'CLOUD',
     technologies: {
       GCP: '/googlecloudplatform.svg',
@@ -42,7 +42,7 @@ export const myStack: Record<string, { header: string; technologies: Record<stri
       Heroku: '/heroku.svg',
     },
   },
-  'UI LIBRARIES': {
+  uiLibraries: {
     header: 'UI LIBRARIES',
     technologies: {
       Tailwind: '/tailwindcss.svg',
@@ -52,7 +52,7 @@ export const myStack: Record<string, { header: string; technologies: Record<stri
       Vuetify: '/vuetify.svg',
     },
   },
-  'DATA ANALYSIS': {
+  dataAnalysis: {
     header: 'DATA ANALYSIS',
     technologies: {
       'Looker Studio': '/lookerstudio.svg',
