@@ -7,12 +7,13 @@ export interface IProjectsData {
   startDate: string;
   endDate: string;
   cardDescription: string;
-  whatIHaveDone: string;
+  whatIHaveDone: string | string[];
   workScheme: 'Hybrid' | 'Remote' | 'On site';
   jobTitle: string;
   stack: string[];
   projectName: string;
   images: string[];
+  imagesSize?: number;
   aboutTheProject: string;
 }
 
