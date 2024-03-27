@@ -6,7 +6,7 @@ import Changelog from '../ui/projects/changelog';
 const Page = () => {
   return (
     <div className='flex'>
-      <div className='flex flex-wrap justify-evenly gap-x-3 gap-y-4 h-2/3'>
+      <div className='flex flex-wrap justify-around gap-x-3 gap-y-4 h-2/3'>
         <ProjectCard />
       </div>
       <div className='w-full'>
