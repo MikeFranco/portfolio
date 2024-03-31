@@ -20,6 +20,6 @@ export const navItemsData: INavItems[] = [
     name: 'Projects',
     href: '/projects',
   },
-  { name: 'About', href: '/about' },
+  /* { name: 'About', href: '/about' }, */
   { name: 'Contact', href: '/contact' },
 ];
