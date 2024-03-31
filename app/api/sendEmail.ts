@@ -19,11 +19,13 @@ export const sendEmail = async (
     });
     const responseData = await response.json();
     console.log('%c⧭', 'color: #bfffc8', responseData);
+    if (responseData.error) {
+      return new Error(responseData.error.message);
+    }
     showSuccessMessage();
     return responseData;
   } catch (error) {
     console.log('%c⧭ error', 'color: #992626', error);
     return Response.json({ error });
   }
-  showSuccessMessage();
 };
