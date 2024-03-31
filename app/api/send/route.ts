@@ -8,11 +8,11 @@ export async function POST(req: NextRequest) {
   try {
     const { name, email, message } = await req.json();
     const data = await resend.emails.send({
-      from: 'Acme <onboarding@resend.dev>', // 'Acme <onboarding@resend.dev>',
-      to: [`${ownEmail}`], //[params.email],
+      from: `Miguel Angel Franco <${ownEmail}>`,
+      to: [`${ownEmail}`],
       subject: 'New contact email received',
       react: EmailTemplate({ name, email, message }),
-      text: 'alo policia',
+      text: '',
     });
     const responseData = await Response.json(data);
     console.log('%c⧭ data', 'color: #73e57c', responseData);
