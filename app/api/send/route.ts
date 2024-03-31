@@ -1,25 +1,17 @@
 import { Resend } from 'resend';
-import { IContactData } from '../types';
 import { EmailTemplate } from '../../ui/emailTemplate/emailTemplate';
-const resend = new Resend('re_4hDaD41m_4W26G1zSW3mygyGJrBVsrEhq');
+import { NextRequest } from 'next/server';
+const resend = new Resend(process.env.RESEND_API_KEY);
 const ownEmail = process.env.PERSONAL_EMAIL;
 
-export const sendEmail = async (
-  params: IContactData,
-  showSuccessMessage: () => void,
-) => {
+export async function POST(req: NextRequest) {
   try {
-    /* const data = await resend.emails.send({
-      from: 'Acme <onboarding@resend.dev>',
-      to: ['mfrancop.98@gmail.com'],
-      subject: 'Contact received',
-      react: EmailTemplate({ firstName: 'aló' }),
-    }); */
+    const { name, email, message } = await req.json();
     const data = await resend.emails.send({
       from: 'Acme <onboarding@resend.dev>', // 'Acme <onboarding@resend.dev>',
       to: [`${ownEmail}`], //[params.email],
       subject: 'New contact email received',
-      react: EmailTemplate(params),
+      react: EmailTemplate({ name, email, message }),
       text: 'alo policia',
     });
     const responseData = await Response.json(data);
@@ -29,5 +21,4 @@ export const sendEmail = async (
     console.log('%c⧭ error', 'color: #992626', error);
     return Response.json({ error });
   }
-  showSuccessMessage();
-};
+}

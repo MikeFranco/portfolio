@@ -1,23 +1,25 @@
-/* import { Resend } from 'resend';
 import { IContactData } from './types';
-import { EmailTemplate } from '../ui/emailTemplate/emailTemplate';
-const resend = new Resend('re_4hDaD41m_4W26G1zSW3mygyGJrBVsrEhq');
-const ownEmail = process.env.PERSONAL_EMAIL;
 
 export const sendEmail = async (
   params: IContactData,
   showSuccessMessage: () => void,
 ) => {
   try {
-    const data = await resend.emails.send({
-      from: 'Acme <onboarding@resend.dev>', // 'Acme <onboarding@resend.dev>',
-      to: [`${ownEmail}`], //[params.email],
-      subject: 'New contact email received',
-      react: EmailTemplate(params),
-      text: 'alo policia',
+    const response = await fetch('/api/send', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+
+      body: JSON.stringify({
+        name: params.name,
+        email: params.email,
+        message: params.message,
+      }),
     });
-    const responseData = await Response.json(data);
-    console.log('%c⧭ data', 'color: #73e57c', responseData);
+    const responseData = await response.json();
+    console.log('%c⧭', 'color: #bfffc8', responseData);
+    showSuccessMessage();
     return responseData;
   } catch (error) {
     console.log('%c⧭ error', 'color: #992626', error);
@@ -25,4 +27,3 @@ export const sendEmail = async (
   }
   showSuccessMessage();
 };
- */

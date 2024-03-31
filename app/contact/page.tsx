@@ -1,9 +1,9 @@
 'use client';
 import { ChangeEvent, FormEvent, useState } from 'react';
 import { IContactData } from '../api/types';
-import { sendEmail } from '../api/send/route';
-import { clsx } from 'clsx';
 import { EmailTemplate } from '../ui/emailTemplate/emailTemplate';
+import { sendEmail } from '../api/sendEmail';
+import { clsx } from 'clsx';
 
 const Page = () => {
   const inputsInitialState = {
@@ -18,8 +18,12 @@ const Page = () => {
 
   const showSuccessMessage = () => {
     setEmailSended(true);
-    setFormData(inputsInitialState);
-    /* setErrors(inputsInitialState); */
+    setErrors(inputsInitialState);
+    setTimeout(() => {
+      setFormData(inputsInitialState);
+      setEmailSended(false);
+      setCanSendEmail(false);
+    }, 3000);
   };
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
