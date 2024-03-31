@@ -1,6 +1,6 @@
-/* import { Resend } from 'resend';
-import { IContactData } from './types';
-import { EmailTemplate } from '../ui/emailTemplate/emailTemplate';
+import { Resend } from 'resend';
+import { IContactData } from '../types';
+import { EmailTemplate } from '../../ui/emailTemplate/emailTemplate';
 const resend = new Resend('re_4hDaD41m_4W26G1zSW3mygyGJrBVsrEhq');
 const ownEmail = process.env.PERSONAL_EMAIL;
 
@@ -9,6 +9,12 @@ export const sendEmail = async (
   showSuccessMessage: () => void,
 ) => {
   try {
+    /* const data = await resend.emails.send({
+      from: 'Acme <onboarding@resend.dev>',
+      to: ['mfrancop.98@gmail.com'],
+      subject: 'Contact received',
+      react: EmailTemplate({ firstName: 'aló' }),
+    }); */
     const data = await resend.emails.send({
       from: 'Acme <onboarding@resend.dev>', // 'Acme <onboarding@resend.dev>',
       to: [`${ownEmail}`], //[params.email],
@@ -25,4 +31,3 @@ export const sendEmail = async (
   }
   showSuccessMessage();
 };
- */

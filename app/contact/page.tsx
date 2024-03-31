@@ -1,7 +1,7 @@
 'use client';
 import { ChangeEvent, FormEvent, useState } from 'react';
 import { IContactData } from '../api/types';
-import { sendEmail } from '../api/sendEmail';
+import { sendEmail } from '../api/send/route';
 import { clsx } from 'clsx';
 import { EmailTemplate } from '../ui/emailTemplate/emailTemplate';
 
