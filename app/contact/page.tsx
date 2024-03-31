@@ -3,6 +3,7 @@ import { ChangeEvent, FormEvent, useState } from 'react';
 import { IContactData } from '../api/types';
 import { sendEmail } from '../api/sendEmail';
 import { clsx } from 'clsx';
+import { EmailTemplate } from '../ui/emailTemplate/emailTemplate';
 
 const Page = () => {
   const inputsInitialState = {
@@ -18,7 +19,7 @@ const Page = () => {
   const showSuccessMessage = () => {
     setEmailSended(true);
     setFormData(inputsInitialState);
-    setErrors(inputsInitialState);
+    /* setErrors(inputsInitialState); */
   };
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
@@ -63,8 +64,12 @@ const Page = () => {
   if (emailSended) {
     return (
       <div className='flex justify-center'>
-        <div className='pt-24 text-2xl'>
-          Thank you for your message!, I'll answer in a bit
+        <div className='pt-24'>
+          <EmailTemplate
+            name={formData.name}
+            email={formData.email}
+            message={formData.message}
+          />
         </div>
       </div>
     );
@@ -76,7 +81,7 @@ const Page = () => {
         <div className='grid w-full min-h-[400px] items-center text-center px-4 gap-4 sm:grid-cols-2'>
           <div className='space-y-4'>
             <h2 className='text-3xl font-bold'>Let's chat!</h2>
-            <p className='text-gray-500 dark:text-gray-400'>
+            <p className='text-gray-500 dark:text-gray-400 text-xl'>
               Fill out the form and I'll get back to you as soon as possible.
             </p>
           </div>
@@ -141,10 +146,13 @@ const Page = () => {
               </div>
               <div className='flex items-center justify-center'>
                 <button
-                  className={clsx('text-white font-bold py-2 px-4 rounded', {
-                    'hover:bg-gradient-1 cursor-pointer': canSendEmail,
-                    'hover:bg-stone-500 cursor-not-allowed': !canSendEmail,
-                  })}
+                  className={clsx(
+                    'text-white font-bold py-2 px-4 rounded border-solid border-[1px] border-white',
+                    {
+                      'hover:bg-gradient-1 cursor-pointer': canSendEmail,
+                      'hover:bg-stone-500 cursor-not-allowed': !canSendEmail,
+                    },
+                  )}
                   disabled={!canSendEmail}
                   type='submit'
                 >
