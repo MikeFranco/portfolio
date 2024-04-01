@@ -18,7 +18,6 @@ export const sendEmail = async (
       }),
     });
     const responseData = await response.json();
-    console.log('%c⧭', 'color: #bfffc8', responseData);
     if (responseData.error) {
       return new Error(responseData.error.message);
     }
