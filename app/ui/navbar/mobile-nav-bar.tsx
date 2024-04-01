@@ -1,6 +1,7 @@
 'use client';
-import Image from 'next/image';
 import { useState } from 'react';
+import Image from 'next/image';
+import './mobile-nav-bar.css';
 
 export const MobileNavBar = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -17,15 +18,15 @@ export const MobileNavBar = () => {
         {!menuActive ? (
           <Image
             src='/menu-outline.svg'
-            width={32}
-            height={32}
+            width={24}
+            height={24}
             alt='gcp'
           />
         ) : (
           <Image
             src='/add-outline.svg'
-            width={32}
-            height={32}
+            width={24}
+            height={24}
             alt='gcp'
           />
         )}
@@ -35,8 +36,8 @@ export const MobileNavBar = () => {
           <Image
             className={`icon ${!menuActive ? 'hidden' : ''}`}
             src='/home-outline.svg'
-            width={32}
-            height={32}
+            width={24}
+            height={24}
             alt='gcp'
           />
         </a>
@@ -46,8 +47,8 @@ export const MobileNavBar = () => {
           <Image
             className={`icon ${!menuActive ? 'hidden' : ''}`}
             src='/work.svg'
-            width={32}
-            height={32}
+            width={24}
+            height={24}
             alt='home'
           />
         </a>
@@ -57,8 +58,8 @@ export const MobileNavBar = () => {
           <Image
             className={`icon ${!menuActive ? 'hidden' : ''}`}
             src='/person-outline.svg'
-            width={32}
-            height={32}
+            width={24}
+            height={24}
             alt='gcp'
           />
         </a>
@@ -68,8 +69,8 @@ export const MobileNavBar = () => {
           <Image
             className={`icon ${!menuActive ? 'hidden' : ''}`}
             src='/github.svg'
-            width={32}
-            height={32}
+            width={24}
+            height={24}
             alt='gcp'
           />
         </a>
@@ -79,8 +80,8 @@ export const MobileNavBar = () => {
           <Image
             className={`icon ${!menuActive ? 'hidden' : ''}`}
             src='/linkedin.svg'
-            width={32}
-            height={32}
+            width={24}
+            height={24}
             alt='gcp'
           />
         </a>
@@ -90,8 +91,8 @@ export const MobileNavBar = () => {
           <Image
             className={`icon ${!menuActive ? 'hidden' : ''}`}
             src='/gcp.svg'
-            width={32}
-            height={32}
+            width={24}
+            height={24}
             alt='gcp'
           />
         </a>
@@ -101,8 +102,8 @@ export const MobileNavBar = () => {
           <Image
             className={`icon ${!menuActive ? 'hidden' : ''}`}
             src='/pepsi-logo.png'
-            width={32}
-            height={32}
+            width={24}
+            height={24}
             alt='gcp'
           />
         </a>
@@ -112,8 +113,8 @@ export const MobileNavBar = () => {
           <Image
             className={`icon ${!menuActive ? 'hidden' : ''}`}
             src='/asistensi-icon-logo.png'
-            width={32}
-            height={32}
+            width={24}
+            height={24}
             alt='gcp'
           />
         </a>

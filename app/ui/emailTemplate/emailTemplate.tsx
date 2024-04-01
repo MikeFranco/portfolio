@@ -15,7 +15,7 @@ export const EmailTemplate: React.FC<Readonly<IContactData>> = ({
         <p>Data received:</p>
       </div>
       <div className='grid items-center p-6 pt-0'>
-        <div className='grid gap-1 text-sm w-full sm:gap-2'>
+        <div className='grid gap-1 text-sm w-full mobile:gap-2'>
           <div className='flex justify-between text-2xl'>
             <p>Name</p>
             <p>{name}</p>
