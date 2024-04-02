@@ -35,6 +35,13 @@ const config: Config = {
         600: '#DC2626',
       },
     },
+    screens: {
+      // => @media (min-width: XXXpx) { ... }
+      mobile: '120px',
+      tablet: '640px',
+      laptop: '1024px',
+      desktop: '1280px',
+    },
   },
   plugins: [],
 };

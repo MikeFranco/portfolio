@@ -82,7 +82,7 @@ const Page = () => {
   return (
     <div className='flex justify-center flex-col max-w-1/5'>
       <div className='w-full overflow-hidden rounded-lg border border-gray-200 dark:border-gray-800'>
-        <div className='grid w-full min-h-[400px] items-center text-center px-4 gap-4 sm:grid-cols-2'>
+        <div className='grid w-full min-h-[400px] items-center text-center px-4 gap-4 mobile:grid-cols-2'>
           <div className='space-y-4'>
             <h2 className='text-3xl font-bold'>Let's chat!</h2>
             <p className='text-gray-500 dark:text-gray-400 text-xl'>
