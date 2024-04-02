@@ -1,6 +1,9 @@
 import { IFeaturedProjects } from './types';
 
-export const myStack: Record<string, { header: string; technologies: Record<string, string> }> = {
+export const myStack: Record<
+  string,
+  { header: string; technologies: Record<string, string> }
+> = {
   languages: {
     header: 'LANGUAGES',
     technologies: {
@@ -64,24 +67,24 @@ export const myStack: Record<string, { header: string; technologies: Record<stri
 export const featuredProjects: IFeaturedProjects[] = [
   {
     image: '/joyapp-logo.png',
-    backgroundColor: '#2C45FF',
+    backgroundColor: 'bg-[#2C45FF]',
     jobTitle: 'Software Engineer Assoc Manager',
     dates: 'September 2023 - Present',
     company: 'PepsiCo',
     project: 'Joy App',
     description:
-      'The Joy App by PepsiCo offers seamless access to PepsiCo products, promotions, and rewards,aiming to enhance customer engagement and satisfaction. Users explore diverse PepsiCo brands, discover new products, and enjoy exclusive offers. With personalized content and interactive features, the app fosters brand loyalty and positive experiences, enriching consumer interactions with PepsiCo.',
-    path: 'joyapp',
+      'The Joy App by PepsiCo offers seamless access to PepsiCo products, promotions, and rewards,aiming to enhance customer engagement and satisfaction. Users explore diverse PepsiCo brands, discover new products, and enjoy exclusive offers.' /* ...With personalized content and interactive features, the app fosters brand loyalty and positive experiences, enriching consumer interactions with PepsiCo. */,
+    path: 'Pepsi',
   },
   {
     image: '/asistensi-logo.svg',
-    backgroundColor: '#FFFFFF',
+    backgroundColor: 'bg-[#FFFFFF]',
     jobTitle: 'Full Stack Developer',
     dates: 'June 2022 - April 2023',
     company: 'Asistensi',
-    project: 'Asistensi mobile app',
+    project: 'Mobile app',
     description:
       'Asistensi is a comprehensive assistance service designed to provide support and guidance in various aspects of life. From personalized assistance with tasks and problem-solving to offering valuable advice, Asistensi aims to enhance and simplify the daily lives of its users.',
-    path: 'joyapp',
+    path: 'Asistensi',
   },
 ];
