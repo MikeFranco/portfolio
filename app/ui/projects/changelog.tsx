@@ -5,18 +5,23 @@ const Changelog = () => {
   return (
     <>
       <p className='font-bold text-lg'>Changelog</p>
-      <div className='flex flex-col items-start overflow-x-auto max-h-[26rem] relative'>
+      <div className='flex flex-row items-start overflow-x-auto max-h-[26rem] relative gap-5'>
         {stepperData.map((step, index) => (
           <div
             key={index}
-            className='flex items-center mt-4'>
+            className='flex items-center my-6 min-w-[12rem] max-w-[12rem]'
+          >
             <div className='relative'>
-              <div className={'h-8 w-8 rounded-full flex items-center justify-center'}>
+              <div
+                className={
+                  'h-8 w-8 rounded-full flex items-center justify-center'
+                }
+              >
                 <Image
                   src={step.icon ?? ''}
                   width={20}
                   height={20}
-                  alt='check square'
+                  alt={`${step.icon}`}
                 />
               </div>
             </div>

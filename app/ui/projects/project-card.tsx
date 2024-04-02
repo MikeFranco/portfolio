@@ -23,7 +23,7 @@ const ProjectCard = () => {
       {projectsData.map((card, index) => (
         <div
           className={clsx(
-            'custom-card bg-slate-900 flex p-3 rounded-lg mobile:w-1/2 laptop:w-3/12 text-justify cursor-pointer laptop:max-h-40',
+            'custom-card bg-slate-900 flex p-3 rounded-lg tablet:w-1/3 laptop:w-3/12 text-justify cursor-pointer',
             {
               blurry: index !== cardHovered && cardHovered !== -1,
             },
