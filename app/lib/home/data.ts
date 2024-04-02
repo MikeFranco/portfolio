@@ -46,10 +46,10 @@ export const myStack: Record<string, { header: string; technologies: Record<stri
     header: 'UI LIBRARIES',
     technologies: {
       Tailwind: '/tailwindcss.svg',
-      'Ant Design': '/antdesign.svg',
       BootStrap: '/bootstrap.svg',
-      'Material Design': '/materialdesign.svg',
       Vuetify: '/vuetify.svg',
+      'Ant Design': '/antdesign.svg',
+      'Material Design': '/materialdesign.svg',
     },
   },
   dataAnalysis: {
