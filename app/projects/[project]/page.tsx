@@ -29,7 +29,7 @@ const ProjectDetails = ({ params }: IProjectDetailsProps) => {
               alt={`${projectData.company} logo`}
             />
           </div>
-          <div className='flex text-center justify-around max-w-50 overflow-x-auto'>
+          <div className='flex text-center space-x-0 max-w-50 overflow-x-auto'>
             {projectData.images.map((image, index) => (
               <Image
                 key={index}
@@ -116,16 +116,20 @@ const ProjectDetails = ({ params }: IProjectDetailsProps) => {
               alt={`${projectData.company} logo`}
             />
           </div>
-          <div className='flex text-center justify-around max-w-50 overflow-x-auto'>
+          <div className='flex text-center w-full overflow-x-auto'>
             {projectData.images.map((image, index) => (
-              <Image
+              <div
                 key={index}
-                src={image}
-                width={projectData.imagesSize ?? 400}
-                height={projectData.imagesSize ?? 400}
-                alt={`${projectData.company} logo`}
-                className='w-fit'
-              />
+                className='flex-shrink-0'
+              >
+                <Image
+                  src={image}
+                  width={projectData.imagesSize ?? 400}
+                  height={projectData.imagesSize ?? 400}
+                  alt={`${projectData.company} logo`}
+                  className='w-fit'
+                />
+              </div>
             ))}
           </div>
           <div className='flex flex-col justify-center text-sm mt-8'>
