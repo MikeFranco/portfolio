@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import './mobile-nav-bar.css';
 
 export const MobileNavBar = () => {
@@ -32,7 +33,7 @@ export const MobileNavBar = () => {
         )}
       </div>
       <li style={{ '--i': 0, '--clr': '#7C75C2', color: 'transparent' } as any}>
-        <a href=''>
+        <Link href='/'>
           <Image
             className={`icon ${!menuActive ? 'hidden' : ''}`}
             src='/home-outline.svg'
@@ -40,10 +41,10 @@ export const MobileNavBar = () => {
             height={24}
             alt='gcp'
           />
-        </a>
+        </Link>
       </li>
       <li style={{ '--i': 1, '--clr': '#ff2972', color: 'transparent' } as any}>
-        <a href=''>
+        <Link href='/projects'>
           <Image
             className={`icon ${!menuActive ? 'hidden' : ''}`}
             src='/work.svg'
@@ -51,10 +52,10 @@ export const MobileNavBar = () => {
             height={24}
             alt='home'
           />
-        </a>
+        </Link>
       </li>
       <li style={{ '--i': 2, '--clr': '#fee800', color: 'transparent' } as any}>
-        <a href=''>
+        <Link href='/contact'>
           <Image
             className={`icon ${!menuActive ? 'hidden' : ''}`}
             src='/person-outline.svg'
@@ -62,10 +63,13 @@ export const MobileNavBar = () => {
             height={24}
             alt='gcp'
           />
-        </a>
+        </Link>
       </li>
       <li style={{ '--i': 3, '--clr': '#04fc43', color: 'transparent' } as any}>
-        <a href=''>
+        <Link
+          href='https://www.github.com/MikeFranco'
+          target='_blank'
+        >
           <Image
             className={`icon ${!menuActive ? 'hidden' : ''}`}
             src='/github.svg'
@@ -73,10 +77,13 @@ export const MobileNavBar = () => {
             height={24}
             alt='gcp'
           />
-        </a>
+        </Link>
       </li>
       <li style={{ '--i': 4, '--clr': '#fe00f1', color: 'transparent' } as any}>
-        <a href=''>
+        <Link
+          href='https://www.linkedin.com/in/miguel-angel-franco/'
+          target='_blank'
+        >
           <Image
             className={`icon ${!menuActive ? 'hidden' : ''}`}
             src='/linkedin.svg'
@@ -84,10 +91,13 @@ export const MobileNavBar = () => {
             height={24}
             alt='gcp'
           />
-        </a>
+        </Link>
       </li>
       <li style={{ '--i': 5, '--clr': '#fea600', color: 'transparent' } as any}>
-        <a href=''>
+        <Link
+          href='https://www.cloudskillsboost.google/public_profiles/60b72f4c-4678-4cc4-b908-204e98debd54'
+          target='_blank'
+        >
           <Image
             className={`icon ${!menuActive ? 'hidden' : ''}`}
             src='/gcp.svg'
@@ -95,10 +105,10 @@ export const MobileNavBar = () => {
             height={24}
             alt='gcp'
           />
-        </a>
+        </Link>
       </li>
       <li style={{ '--i': 6, '--clr': '#a529ff', color: 'transparent' } as any}>
-        <a href=''>
+        <Link href='/projects/Pepsi'>
           <Image
             className={`icon ${!menuActive ? 'hidden' : ''}`}
             src='/pepsi-logo.png'
@@ -106,10 +116,10 @@ export const MobileNavBar = () => {
             height={24}
             alt='gcp'
           />
-        </a>
+        </Link>
       </li>
       <li style={{ '--i': 7, '--clr': '#01bdab', color: 'transparent' } as any}>
-        <a href=''>
+        <Link href='/projects/Asistensi'>
           <Image
             className={`icon ${!menuActive ? 'hidden' : ''}`}
             src='/asistensi-icon-logo.png'
@@ -117,7 +127,7 @@ export const MobileNavBar = () => {
             height={24}
             alt='gcp'
           />
-        </a>
+        </Link>
       </li>
     </ul>
   );

@@ -3,8 +3,10 @@ import Image from 'next/image';
 const BriefDescription = () => {
   return (
     <>
-      <p className='text-4xl'>Full Stack Mobile & Web Developer</p>
-      <div className='flex flex-row gap-4'>
+      <p className='mobile:max-laptop:text-3xl laptop:text-4xl'>
+        Full Stack Mobile & Web Developer
+      </p>
+      <div className='flex flex-row gap-4 mobile:max-laptop:hidden'>
         <p className='text-4xl'>from Mexico City</p>
         <Image
           src='/mexico.svg'
@@ -13,6 +15,16 @@ const BriefDescription = () => {
           height={40}
         />
       </div>
+      <div className='flex flex-wrap items-center laptop:hidden'>
+        <p className='text-3xl'>from Mexico City</p>
+        <Image
+          src='/mexico.svg'
+          alt={'mexico flag'}
+          width={40}
+          height={40}
+        />
+      </div>
+
       <p className='w-full text-justify text-stone-500 pt-2'>
         Explore my portfolio to witness over 5 years of Full Stack Development
         expertise in JavaScript, TypeScript, and Dart. With a track record of
