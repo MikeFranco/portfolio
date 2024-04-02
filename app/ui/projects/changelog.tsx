@@ -5,7 +5,7 @@ const Changelog = () => {
   return (
     <>
       <p className='font-bold text-lg'>Changelog</p>
-      <div className='flex flex-row items-start overflow-x-auto max-h-[26rem] relative gap-5'>
+      <div className='flex flex-row items-start overflow-x-auto max-h-[26rem] gap-5'>
         {stepperData.map((step, index) => (
           <div
             key={index}

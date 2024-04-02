@@ -103,7 +103,7 @@ const ProjectDetails = ({ params }: IProjectDetailsProps) => {
       </div>
 
       <div className='flex justify-center laptop:hidden'>
-        <div className='flex flex-col justify-center w-4/5'>
+        <div className='flex flex-col justify-center w-7/8'>
           <p className='text-xs text-center text-stone-500'>
             {projectData.startDate.toUpperCase()} -{' '}
             {projectData.endDate.toUpperCase()}
