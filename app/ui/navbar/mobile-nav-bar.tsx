@@ -119,10 +119,13 @@ export const MobileNavBar = () => {
         </Link>
       </li>
       <li style={{ '--i': 7, '--clr': '#01bdab', color: 'transparent' } as any}>
-        <Link href='/projects/Asistensi'>
+        <Link
+          href='https://www.canva.com/design/DAGBX_h5Fxg/WmVGx0E08OnzNHZR5UbT7Q/edit?utm_content=DAGBX_h5Fxg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'
+          target='_blank'
+        >
           <Image
             className={`icon ${!menuActive ? 'hidden' : ''}`}
-            src='/asistensi-icon-logo.png'
+            src='/cv.svg'
             width={24}
             height={24}
             alt='gcp'
