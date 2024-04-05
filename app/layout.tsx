@@ -19,11 +19,11 @@ export default function RootLayout({
     <html lang='en'>
       <body className={inter.className}>
         <div className='flex h-screen flex-col laptop:flex-row'>
-          <div className='flex-grow w-full p-6 laptop:overflow-y-auto'>
+          <div className='flex-grow w-full laptop:overflow-y-auto'>
             <div className='w-full sticky top-[-25px] z-50'>
               <NavBar />
             </div>
-            {children}
+            <div className='px-6'>{children}</div>
           </div>
         </div>
       </body>

@@ -4,7 +4,7 @@ import { MobileNavBar } from './mobile-nav-bar';
 
 export default function NavBar() {
   return (
-    <div className='flex flex-row px-3 py-4 bg-black mobile:justify-center laptop:justify-between'>
+    <div className='flex flex-row px-3 py-4 bg-black mobile:justify-center laptop:justify-between w-full'>
       <div className='text-lg text-white text-center pl-3 mobile:hidden laptop:block'>
         <p>Miguel Angel Franco Peza</p>
         <p>Full Stack Developer</p>
