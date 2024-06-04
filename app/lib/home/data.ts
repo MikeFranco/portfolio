@@ -41,8 +41,10 @@ export const myStack: Record<
     header: 'CLOUD',
     technologies: {
       GCP: '/googlecloudplatform.svg',
+      AWS: '/aws.svg',
       Docker: '/docker.svg',
       Heroku: '/heroku.svg',
+      Datadog: '/datadog.svg',
     },
   },
   uiLibraries: {
