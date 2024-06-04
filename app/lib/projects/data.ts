@@ -25,10 +25,11 @@ export const projectsData: IProjectsData[] = [
     projectName: 'Joy App',
     images: [
       '/joyapp-0.webp',
-      '/joyapp-old-1.webp',
-      '/joyapp-old-2.webp',
-      '/joyapp-old-3.webp',
+      '/joyapp-1.webp',
+      '/joyapp-2.webp',
+      '/joyapp-4.webp',
     ],
+    imagesSize: 150,
     aboutTheProject: `With this new version of the app we elevate user experience and interface design. With enhanced backend requests, we've optimized performance by up to 10%. Additionally, we can track events within the app and report incidents effortlessly. Also we've introduced deeplinks to enhance UX, allowing users to navigate directly to rewards, campaigns, or games with just a tap. Experience a smoother, more intuitive app journey with our latest update.`,
   },
   {
@@ -43,7 +44,7 @@ export const projectsData: IProjectsData[] = [
     endDate: 'present',
     overview:
       'Inabit offers international shipping with reliable delivery solutions. Key features include competitive pricing, real-time tracking, and personalized customer support. Their experience in national logistics makes them a dependable partner for optimizing supply chains and meeting tight delivery schedules.',
-    whatIHaveDone:[
+    whatIHaveDone: [
       'UPS: Integrated the UPS service, expanding shipping options and improving efficiency and reliability for users by providing seamless shipment handling and real-time tracking updates.',
       'Acuse XT: Implemented the "Acuse XT" feature for Paquete Express, enhancing tracking capabilities and delivery confirmations, ensuring users receive accurate notifications and proof of delivery.',
       'UX/UI Improvements: Made the platform more user-friendly and intuitive, leading to better navigation, streamlined workflows, and higher user satisfaction.',
