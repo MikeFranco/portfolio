@@ -36,7 +36,7 @@ const ProjectCard = () => {
           <div className='flex items-center justify-center w-16 mobile:w-auto'>
             <div className='p-1'>
               <Image
-                src={card.image}
+                src={card.imageCard ?? card.image}
                 width={50}
                 height={50}
                 alt={`${card.company} logo`}

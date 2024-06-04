@@ -11,8 +11,7 @@ export const projectsData: IProjectsData[] = [
     isBlurred: false,
     startDate: 'september 2023',
     endDate: 'present',
-    overview:
-      `Joy App by PepsiCo is the new personalized platform in which you can redeem the strips with codes of the promotions and the participating products of the PepsiCo family, to add points and participate to win unique rewards.`,
+    overview: `Joy App by PepsiCo is the new personalized platform in which you can redeem the strips with codes of the promotions and the participating products of the PepsiCo family, to add points and participate to win unique rewards.`,
     whatIHaveDone:
       'Implemented Firebase remote config for dynamic updates and personalized experiences. Added deep links and events to support marketing campaigns and user redirection. Enhanced UX/UI across all screens for a cohesive interface. Addressed bugs and improved app stability using Firebase Crashlytics.',
     workScheme: 'Remote',
@@ -24,9 +23,47 @@ export const projectsData: IProjectsData[] = [
       myStack.dataAnalysis.technologies.AppsFlyer,
     ],
     projectName: 'Joy App',
-    images: ['/joyapp-0.webp', '/joyapp-old-1.webp', '/joyapp-old-2.webp', '/joyapp-old-3.webp'],
-    aboutTheProject:
-      `With this new version of the app we elevate user experience and interface design. With enhanced backend requests, we've optimized performance by up to 10%. Additionally, we can track events within the app and report incidents effortlessly. Also we've introduced deeplinks to enhance UX, allowing users to navigate directly to rewards, campaigns, or games with just a tap. Experience a smoother, more intuitive app journey with our latest update.`,
+    images: [
+      '/joyapp-0.webp',
+      '/joyapp-old-1.webp',
+      '/joyapp-old-2.webp',
+      '/joyapp-old-3.webp',
+    ],
+    aboutTheProject: `With this new version of the app we elevate user experience and interface design. With enhanced backend requests, we've optimized performance by up to 10%. Additionally, we can track events within the app and report incidents effortlessly. Also we've introduced deeplinks to enhance UX, allowing users to navigate directly to rewards, campaigns, or games with just a tap. Experience a smoother, more intuitive app journey with our latest update.`,
+  },
+  {
+    imageCard: '/in-a-bit.svg',
+    image: '/inabit-complete-logo.svg',
+    company: 'In A Bit',
+    projectType: 'Web',
+    cardDescription:
+      ' Inabit provides a range of international shipping services, particularly focusing on reliable and efficient delivery solutions',
+    isBlurred: false,
+    startDate: 'april 2024',
+    endDate: 'present',
+    overview:
+      'Inabit offers international shipping with reliable delivery solutions. Key features include competitive pricing, real-time tracking, and personalized customer support. Their experience in national logistics makes them a dependable partner for optimizing supply chains and meeting tight delivery schedules.',
+    whatIHaveDone:[
+      'UPS: Integrated the UPS service, expanding shipping options and improving efficiency and reliability for users by providing seamless shipment handling and real-time tracking updates.',
+      'Acuse XT: Implemented the "Acuse XT" feature for Paquete Express, enhancing tracking capabilities and delivery confirmations, ensuring users receive accurate notifications and proof of delivery.',
+      'UX/UI Improvements: Made the platform more user-friendly and intuitive, leading to better navigation, streamlined workflows, and higher user satisfaction.',
+      'QR Code Feature: Introduced a new feature allowing users to scan QR codes to update package statuses quickly and accurately, reducing errors and improving operational efficiency by providing real-time shipment information.',
+    ],
+    workScheme: 'Remote',
+    jobTitle: 'Freelance Software Engineer',
+    stack: [
+      myStack.languages.technologies.TypeScript,
+      myStack.frontend.technologies.React,
+      myStack.uiLibraries.technologies.Tailwind,
+      myStack.backend.technologies.Node,
+      myStack.backend.technologies.MongoDB,
+      myStack.cloud.technologies.AWS,
+      myStack.cloud.technologies.Datadog,
+    ],
+    projectName: 'Inabit',
+    images: ['/inabit-1.png', '/inabit-2.png'],
+    imagesSize: 600,
+    aboutTheProject: `Key features of their services include competitive and transparent pricing, real-time tracking for shipments, and personalized customer support to address specific logistics needs. Their extensive experience in national logistics positions them as a dependable partner for businesses looking to optimize their supply chain and meet tight delivery schedules`,
   },
   {
     image: '/walmart-logo.svg',
@@ -37,7 +74,8 @@ export const projectsData: IProjectsData[] = [
     isBlurred: false,
     startDate: 'august 2023',
     endDate: 'january 2024',
-    overview: 'The app for associates and career seekers. It offers scheduling, attendance tracking, metrics, Ask Sam for inquiries, team communication, and more.',
+    overview:
+      'The app for associates and career seekers. It offers scheduling, attendance tracking, metrics, Ask Sam for inquiries, team communication, and more.',
     whatIHaveDone: `Experience in maintaining and enhancing the Me@Walmart International application, with a dedicated focus on elevating the user experience and resolving bugs. Proficient in efficient data management utilizing the Looker platform to visualize both user interactions and application usage patterns. 
     Proficient in creating dashboards within ServiceNow to represent incidents reported by associates, demonstrating a proactive approach in incident management and resolution to enhance the application.
     Utilized feedback from associates to drive improvements, ensuring a responsive and user- centric application experience.`,
@@ -49,10 +87,13 @@ export const projectsData: IProjectsData[] = [
     ],
     //stack: ['micro-frontends'],
     projectName: 'Me@Walmart International',
-    images: ['/me-at-walmart-0.webp', '/me-at-walmart-1.webp', '/me-at-walmart-2.webp'],
+    images: [
+      '/me-at-walmart-0.webp',
+      '/me-at-walmart-1.webp',
+      '/me-at-walmart-2.webp',
+    ],
     imagesSize: 300,
-    aboutTheProject:
-      `Me@Walmart is the all-in-one app designed with input from Walmart associates and tailored for customers interested in exploring career opportunities with the retail giant. Through Me@Walmart, users gain insights into Walmart's esteemed history, cultural ethos, and the array of benefits offered to associates. For enrolled associates, the app provides an array of internal functionalities accessible via 2-step verification. These include streamlined Time & Attendance management, convenient shift scheduling tools, real-time store performance metrics monitoring, and a smart search assistant, "Ask Sam," for product and operational inquiries. Additionally, associates can stay connected with their store team through messaging features and access notifications and scheduling updates via the Inbox feature. With more exciting features on the horizon, Me@Walmart is set to revolutionize the Walmart experience for associates and customers alike.`,
+    aboutTheProject: `Me@Walmart is the all-in-one app designed with input from Walmart associates and tailored for customers interested in exploring career opportunities with the retail giant. Through Me@Walmart, users gain insights into Walmart's esteemed history, cultural ethos, and the array of benefits offered to associates. For enrolled associates, the app provides an array of internal functionalities accessible via 2-step verification. These include streamlined Time & Attendance management, convenient shift scheduling tools, real-time store performance metrics monitoring, and a smart search assistant, "Ask Sam," for product and operational inquiries. Additionally, associates can stay connected with their store team through messaging features and access notifications and scheduling updates via the Inbox feature. With more exciting features on the horizon, Me@Walmart is set to revolutionize the Walmart experience for associates and customers alike.`,
   },
   {
     image: '/gulf-logo.png',
@@ -63,7 +104,8 @@ export const projectsData: IProjectsData[] = [
     isBlurred: false,
     startDate: 'june 2023',
     endDate: 'august 2023',
-    overview: 'Gulf is a leading energy company, specializing in oil and gas exploration, production, and distribution, with a strong focus on innovation and sustainability.',
+    overview:
+      'Gulf is a leading energy company, specializing in oil and gas exploration, production, and distribution, with a strong focus on innovation and sustainability.',
     whatIHaveDone: `Increased the development speed in 60% after the migration from Laravel to Typescript. Additionally, the web page bounce rate decreased 15% because we decreased the First Time To Interact from 1.5s to 500ms. AngularJS components were completely refactored, following best practices and adding TypeScript interfaces to improve the functionality of previously coded components.
       Integration of essential third-party libraries.
       Facturador: Streamlined the invoicing process, enabling automatic generation to facilitate tax-related tasks.
@@ -83,7 +125,7 @@ export const projectsData: IProjectsData[] = [
       myStack.backend.technologies.MySQL,
     ],
     projectName: 'Gulf',
-    images: ['/gulf-1.png',],
+    images: ['/gulf-1.png'],
     imagesSize: 1000,
     aboutTheProject:
       'With this project, we transform from a loyalty app to a full-fledged e-commerce platform. Shop Gulf merchandise and more, paying with money or points. Now users can create invoices, track their shipments, and utilize their points earned each time they refuel gas.',
@@ -97,8 +139,10 @@ export const projectsData: IProjectsData[] = [
     isBlurred: false,
     startDate: 'august 2021',
     endDate: 'august 2023',
-    overview: 'Established in 2013, Noodle pioneers infrastructure and online enrollment growth for global academic institutions. Their mission: empower universities to transform education by offering resilient, responsive, and efficient tech solutions.',
-    whatIHaveDone: 'During my tenure, I spearheaded the integration of various new features into our platform. This included the addition of new roles to access the admin page, the implementation of comprehensive pages providing detailed information on coaches and universities, and the incorporation of filters to display specific data related to goals and key dates. Additionally, I oversaw the creation of dashboards and cards for data visualization using AntD, ensuring intuitive and insightful representations of our data. Furthermore, I directly engaged with clients to gather requirements and address their needs, fostering strong client relationships. Moreover, I took on the responsibility of reviewing code contributed by my colleagues, meticulously validating that each ticket was fulfilled according to the specified requirements before passing it on to the quality assurance team.',
+    overview:
+      'Established in 2013, Noodle pioneers infrastructure and online enrollment growth for global academic institutions. Their mission: empower universities to transform education by offering resilient, responsive, and efficient tech solutions.',
+    whatIHaveDone:
+      'During my tenure, I spearheaded the integration of various new features into our platform. This included the addition of new roles to access the admin page, the implementation of comprehensive pages providing detailed information on coaches and universities, and the incorporation of filters to display specific data related to goals and key dates. Additionally, I oversaw the creation of dashboards and cards for data visualization using AntD, ensuring intuitive and insightful representations of our data. Furthermore, I directly engaged with clients to gather requirements and address their needs, fostering strong client relationships. Moreover, I took on the responsibility of reviewing code contributed by my colleagues, meticulously validating that each ticket was fulfilled according to the specified requirements before passing it on to the quality assurance team.',
     workScheme: 'Remote',
     jobTitle: 'Software Engineer',
     stack: [
@@ -133,8 +177,13 @@ export const projectsData: IProjectsData[] = [
       myStack.frontend.technologies['React Native'],
       myStack.uiLibraries.technologies.Tailwind,
     ],
-    projectName: 'Joy App',
-    images: ['/asistensi-0.webp', '/asistensi.webp', '/asistensi-2.webp', '/asistensi-3.webp'],
+    projectName: 'Asistensi app',
+    images: [
+      '/asistensi-0.webp',
+      '/asistensi.webp',
+      '/asistensi-2.webp',
+      '/asistensi-3.webp',
+    ],
     imagesSize: 200,
     aboutTheProject: `An innovative platform, Asistensi connects users with personalized, on-demand assistance services, offering a comprehensive range of support options including ambulance services, medicine delivery, and online medical assistance. Through intuitive technology and seamless integration, Asistensi ensures quick access to essential medical aid whenever and wherever it's needed, providing peace of mind and reliable assistance to individuals seeking urgent medical support. With a focus on user experience and accessibility, Asistensi aims to enhance healthcare accessibility and improve the overall well-being of its users by delivering prompt and efficient medical assistance services.`,
   },
@@ -147,7 +196,8 @@ export const projectsData: IProjectsData[] = [
     isBlurred: false,
     startDate: 'august 2021',
     endDate: 'june 2022',
-    overview: 'Kavak is transforming the Latin American used car market with an intuitive platform, offering buyers and sellers access to quality vehicles at competitive prices. Leveraging advanced technology for transparency and reliability, Kavak reshapes car buying with innovation and customer-centric focus.',
+    overview:
+      'Kavak is transforming the Latin American used car market with an intuitive platform, offering buyers and sellers access to quality vehicles at competitive prices. Leveraging advanced technology for transparency and reliability, Kavak reshapes car buying with innovation and customer-centric focus.',
     whatIHaveDone: `I spearheaded the development of a user interface from scratch for a flow manager dedicated to sending marketing campaigns, ensuring seamless operation and user-friendly functionality. Additionally, I played a pivotal role in introducing new services utilizing GraphQL technology. These services included a system to rate Kavak's theft reporting service, an automated ticket creation service in Jira for reporting stolen cars, and an email service to notify the car insurance company about that stolen cars`,
     workScheme: 'Remote',
     jobTitle: 'Software Engineer Assoc Manager',
@@ -159,9 +209,10 @@ export const projectsData: IProjectsData[] = [
       myStack.backend.technologies.GraphQL,
       myStack.backend.technologies.MongoDB,
       myStack.backend.technologies.MySQL,
+      myStack.cloud.technologies.Datadog,
     ],
     //stack: [ 'DataDog'],
-    projectName: 'Joy App',
+    projectName: 'Kavak app',
     images: ['/kavak-0.png', '/kavak-1.webp', '/kavak-2.png'],
     aboutTheProject:
       'Kavak is a leading platform in the automotive industry, revolutionizing the way people buy and sell used cars across Latin America. With a user-friendly interface and innovative solutions, Kavak offers a seamless experience for both buyers and sellers, providing access to a wide range of high-quality vehicles at competitive prices. By leveraging advanced technology and robust market insights, Kavak ensures transparency, reliability, and convenience throughout the entire car-buying process. With a commitment to customer satisfaction and a vision for transforming the automotive market, Kavak continues to redefine the way people think about purchasing and owning vehicles.',
@@ -175,7 +226,8 @@ export const projectsData: IProjectsData[] = [
     isBlurred: false,
     startDate: 'july 2020',
     endDate: 'january 2022',
-    overview: 'AM provide expert advice and guidance to organizations seeking to optimize their technology infrastructure, systems, and processes. These firms offer a wide range of services, including strategic planning, technology assessment, system design and implementation, software development, cybersecurity analysis, and IT project management.',
+    overview:
+      'AM provide expert advice and guidance to organizations seeking to optimize their technology infrastructure, systems, and processes. These firms offer a wide range of services, including strategic planning, technology assessment, system design and implementation, software development, cybersecurity analysis, and IT project management.',
     whatIHaveDone: [
       'Xybrid (Oct 2021-Jan 2022): Constructed MySQL and Node.js backend architecture from scratch for a VR golf videogame.',
       'Caplugs (Sept-Nov 2021): Designed HTML and SASS layouts, improving the user experience by 15%.',
@@ -201,10 +253,14 @@ export const projectsData: IProjectsData[] = [
       myStack.backend.technologies.MySQL,
     ],
     projectName: 'Xybrid',
-    images: ['/chedraui-0.webp', '/chedraui-1.webp', '/chedraui-2.webp', '/chedraui-3.webp'],
+    images: [
+      '/chedraui-0.webp',
+      '/chedraui-1.webp',
+      '/chedraui-2.webp',
+      '/chedraui-3.webp',
+    ],
     imagesSize: 200,
-    aboutTheProject:
-      `Throughout my experience with AM, I've engaged in diverse projects spanning backend architecture, UI/UX design, client interaction, and feature integration. From constructing backend systems for VR games to enhancing user experiences with HTML and SASS layouts, I've demonstrated versatility and proficiency in various technologies. My experience includes tracking user events, collaborating on Angular layouts, and integrating advanced features like MapBox using React and React Native. At Chedraui, I excelled in maintaining and enhancing their app, resolving incidents promptly, and fostering positive client relationships. These experiences underscore my adaptability, technical prowess, and dedication to delivering impactful solutions in the dynamic field of software development.`,
+    aboutTheProject: `Throughout my experience with AM, I've engaged in diverse projects spanning backend architecture, UI/UX design, client interaction, and feature integration. From constructing backend systems for VR games to enhancing user experiences with HTML and SASS layouts, I've demonstrated versatility and proficiency in various technologies. My experience includes tracking user events, collaborating on Angular layouts, and integrating advanced features like MapBox using React and React Native. At Chedraui, I excelled in maintaining and enhancing their app, resolving incidents promptly, and fostering positive client relationships. These experiences underscore my adaptability, technical prowess, and dedication to delivering impactful solutions in the dynamic field of software development.`,
   },
   {
     image: '/axend-logo.png',
@@ -215,8 +271,10 @@ export const projectsData: IProjectsData[] = [
     isBlurred: false,
     startDate: 'february 2019',
     endDate: 'february 2021',
-    overview: 'Axend is a comprehensive platform designed to serve as a catalyst for growth, both at the individual and business level, by offering a range of investment opportunities. ',
-    whatIHaveDone: 'In my role, I closely coordinate with both marketing and operations teams to ensure seamless alignment on platform objectives. Alongside this, I take charge of maintaining our platform, overseeing the management of five backends and two frontends. I also spearhead the integration of new features, such as recently creating a data visualization dashboard and implementing its functionality using JavaScript. Additionally, I handle SSL certificate renewal to uphold platform security. Lastly, I am responsible for managing and maintaining our infrastructure on Google Cloud Platform (GCP), ensuring its smooth operation and efficiency.',
+    overview:
+      'Axend is a comprehensive platform designed to serve as a catalyst for growth, both at the individual and business level, by offering a range of investment opportunities. ',
+    whatIHaveDone:
+      'In my role, I closely coordinate with both marketing and operations teams to ensure seamless alignment on platform objectives. Alongside this, I take charge of maintaining our platform, overseeing the management of five backends and two frontends. I also spearhead the integration of new features, such as recently creating a data visualization dashboard and implementing its functionality using JavaScript. Additionally, I handle SSL certificate renewal to uphold platform security. Lastly, I am responsible for managing and maintaining our infrastructure on Google Cloud Platform (GCP), ensuring its smooth operation and efficiency.',
     workScheme: 'Hybrid',
     jobTitle: 'Chief Technology Officer & Full Stack Developer',
     stack: [
@@ -225,7 +283,7 @@ export const projectsData: IProjectsData[] = [
       myStack.frontend.technologies.VueJS,
       myStack.uiLibraries.technologies.Vuetify,
       myStack.backend.technologies.Node,
-      myStack.cloud.technologies.GCP
+      myStack.cloud.technologies.GCP,
     ],
     projectName: 'Axend webapp',
     images: ['/axend-0.png', '/axend.png', '/axend-2.png', '/axend-3.png'],

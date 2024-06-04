@@ -1,4 +1,5 @@
 export interface IProjectsData {
+  imageCard?: string;
   image: string;
   company: string;
   projectType: string;

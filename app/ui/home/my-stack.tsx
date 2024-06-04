@@ -12,7 +12,9 @@ const MyStack = () => {
             key={`${header}-${index}`}
             className='laptop:w-3/12'
           >
-            <p className='border-x-2 px-8'>{header.toUpperCase()}</p>
+            <p className='border-x-2 px-5'>
+              {myStack[header].header.toUpperCase()}
+            </p>
             <ul className='justify-start text-center mt-5 mobile:max-laptop:max-h-44 laptop:max-h-44 overflow-y-auto'>
               {Object.entries(myStack[header].technologies).map(
                 ([technologyName, technologyIcon], itemIndex: number) => {
@@ -35,7 +37,7 @@ const MyStack = () => {
                         height={20}
                         alt={technologyName}
                       />
-                      <li>{technologyName}</li>
+                      <p>{technologyName}</p>
                     </div>
                   );
                 },
