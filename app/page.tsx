@@ -6,10 +6,13 @@ import RecentJobs from './ui/home/recent-jobs';
 import { useState } from 'react';
 
 export default function Home() {
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+  const totalOfYears = currentYear - 2019;
   return (
     <main className='flex justify-center'>
       <div className='flex flex-col mobile:p-2 mobile:w-11/12 laptop:p-6 laptop:w-8/12'>
-        <BriefDescription />
+        <BriefDescription totalOfYears={totalOfYears}/>
         <MyStack />
         <Education />
         <RecentJobs />
