@@ -8,7 +8,7 @@ import { useState } from 'react';
 export default function Home() {
   return (
     <main className='flex justify-center'>
-      <div className='flex flex-col mobile:p-2 mobile:w-11/12 laptop:p-6 laptop:w-7/12'>
+      <div className='flex flex-col mobile:p-2 mobile:w-11/12 laptop:p-6 laptop:w-8/12'>
         <BriefDescription />
         <MyStack />
         <Education />

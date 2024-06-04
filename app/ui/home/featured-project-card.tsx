@@ -12,11 +12,12 @@ const FeaturedProjectCard = () => (
           key={index}
         >
           <div
-            className={`w-1/2 h-[24rem] relative ${project.backgroundColor}`}
+            className={`w-1/2 h-[24rem] relative ${project.backgroundColor} flex items-center justify-center`}
           >
             <Image
               src={project.image}
-              layout='fill'
+              width={300}
+              height={300}
               alt={project.company}
             />
           </div>
@@ -35,7 +36,7 @@ const FeaturedProjectCard = () => (
             </div>
             <Link href={`/projects/${project.path}`}>
               <div className='flex justify-end'>
-                <p>Read More</p>
+                <p className='hover:text-gradient-4'>Read More</p>
                 <Image
                   src='/arrow-right.svg'
                   width={15}
@@ -56,11 +57,12 @@ const FeaturedProjectCard = () => (
           key={index}
         >
           <div
-            className={`w-full h-[18rem] relative ${project.backgroundColor}`}
+            className={`w-full h-[18rem] relative ${project.backgroundColor} flex items-center justify-center`}
           >
             <Image
               src={project.image}
-              layout='fill'
+              width={250}
+              height={250}
               alt={project.company}
             />
           </div>
@@ -80,7 +82,7 @@ const FeaturedProjectCard = () => (
             </div>
             <Link href={`/projects/${project.path}`}>
               <div className='flex justify-end mb-10 mt-3'>
-                <p>Read More</p>
+                <p className='hover:text-gradient-4'>Read More</p>
                 <Image
                   src='/arrow-right.svg'
                   width={15}

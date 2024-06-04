@@ -8,16 +8,15 @@ const FeaturedProjects = () => {
       <div className='flex justify-between'>
         <p className='mobile:text-xl tablet:text-4xl py-8'>FEATURED PROJECTS</p>
         <Link href='/projects'>
-          <div className='flex items-center'>
-            <p className='mobile:text-lg tablet:text-lg py-8'>
+          <div className='flex items-center hover:text-gradient-4'>
+            <p className='mobile:text-lg tablet:text-lg py-8 hover:text-gradient-4'>
               View all projects
             </p>
             <Image
               src='/arrow-right.svg'
-              width={15}
-              height={15}
+              width={14}
+              height={14}
               alt='arrow-right'
-              className='tablet:ml-2'
             />
           </div>
         </Link>
