@@ -32,13 +32,13 @@ export const projectsData: IProjectsData[] = [
     imagesSize: 150,
     aboutTheProject: `With this new version of the app we elevate user experience and interface design. With enhanced backend requests, we've optimized performance by up to 10%. Additionally, we can track events within the app and report incidents effortlessly. Also we've introduced deeplinks to enhance UX, allowing users to navigate directly to rewards, campaigns, or games with just a tap. Experience a smoother, more intuitive app journey with our latest update.`,
   },
-  {
+  /* {
     imageCard: '/in-a-bit.svg',
     image: '/inabit-complete-logo.svg',
     company: 'In A Bit',
     projectType: 'Web',
     cardDescription:
-      ' Inabit provides a range of international shipping services, particularly focusing on reliable and efficient delivery solutions',
+      'Inabit provides a range of international shipping services, particularly focusing on reliable and efficient delivery solutions',
     isBlurred: false,
     startDate: 'april 2024',
     endDate: 'present',
@@ -65,7 +65,44 @@ export const projectsData: IProjectsData[] = [
     images: ['/inabit-1.png', '/inabit-2.png'],
     imagesSize: 600,
     aboutTheProject: `Key features of their services include competitive and transparent pricing, real-time tracking for shipments, and personalized customer support to address specific logistics needs. Their extensive experience in national logistics positions them as a dependable partner for businesses looking to optimize their supply chain and meet tight delivery schedules`,
-  },
+  }, */
+ /*  {
+    imageCard: '/mexicana-de-becas-mini.svg',
+    image: '/mexicana-de-becas.svg',
+    company: 'Mexicana de Becas',
+    projectType: 'App',
+    cardDescription:
+      "A financial vehicle that offers families the opportunity to acquire an educational savings plan for their children's high school and/or university education.",
+    isBlurred: false,
+    startDate: 'may 2024',
+    endDate: 'august 2024',
+    overview: 'Mexican organization dedicated to providing scholarships and educational opportunities to students in need. They focus on empowering talented individuals from diverse backgrounds to access quality education, regardless of their economic circumstances.',
+    whatIHaveDone: [
+      'Developed the user interface by creating the screens, starting from scratch and translating the Figma designs into functional React Native code.',
+      'Implemented the integration between the frontend and backend, ensuring seamless communication and data flow.',
+      'Engaged in direct communication with the client to understand and define the quotation process, ensuring that the implemented features met their requirements and expectations.',
+    ],
+    workScheme: 'Remote',
+    jobTitle: 'Freelance Mobile Engineer',
+    stack: [
+      myStack.languages.technologies.TypeScript,
+      myStack.frontend.technologies.React,
+      myStack.uiLibraries.technologies.Tailwind,
+      myStack.backend.technologies.Node,
+      myStack.backend.technologies.MongoDB,
+      myStack.cloud.technologies.AWS,
+      myStack.cloud.technologies.Datadog,
+    ],
+    projectName: 'Mexicana de Becas app',
+    images: [
+      '/mexicana-de-becas-0.png',
+      '/mexicana-de-becas-1.png',
+      '/mexicana-de-becas-2.png',
+      '/mexicana-de-becas-3.png',
+    ],
+    imagesSize: 200,
+    aboutTheProject: 'TODO',
+  }, */
   {
     image: '/walmart-logo.svg',
     company: 'Walmart',
