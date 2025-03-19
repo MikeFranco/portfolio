@@ -7,7 +7,7 @@ const BriefDescription = ({ totalOfYears }: { totalOfYears: number }) => {
         Full Stack Mobile & Web Developer
       </p>
       <div className='flex flex-row gap-4 mobile:max-laptop:hidden'>
-        <p className='text-4xl'>from Mexico City</p>
+        <p className='text-4xl'>from Querétaro, Mexico</p>
         <Image
           src='/mexico.svg'
           alt={''}
@@ -16,13 +16,7 @@ const BriefDescription = ({ totalOfYears }: { totalOfYears: number }) => {
         />
       </div>
       <div className='flex flex-wrap items-center laptop:hidden'>
-        <p className='text-3xl'>from Mexico City</p>
-        <Image
-          src='/mexico.svg'
-          alt={'mexico flag'}
-          width={40}
-          height={40}
-        />
+        <p className='text-3xl'>from Querétaro, Mexico 🇲🇽</p>
       </div>
 
       <p className='w-full text-justify text-stone-500 pt-2'>
