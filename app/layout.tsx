@@ -7,7 +7,30 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Miguel Angel Franco Peza Portfolio',
-  description: 'This is my professional portfolio',
+  description:
+    'Full Stack Developer with expertise in JavaScript, TypeScript, and Dart. Explore my portfolio showcasing over 5 years of experience and 10+ successful projects.',
+  openGraph: {
+    title: 'Miguel Angel Franco Peza Portfolio',
+    description:
+      'Full Stack Developer with expertise in JavaScript, TypeScript, and Dart. Explore my portfolio showcasing over 5 years of experience and 10+ successful projects.',
+    images: [
+      {
+        url: '/preview.png',
+        width: 800,
+        height: 600,
+        alt: 'Miguel Angel Franco Peza Portfolio',
+      },
+    ],
+    type: 'website',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Miguel Angel Franco Peza Portfolio',
+    description:
+      'Full Stack Developer with expertise in JavaScript, TypeScript, and Dart. Explore my portfolio showcasing over 5 years of experience and 10+ successful projects.',
+    images: ['/preview.png'],
+  },
 };
 
 export default function RootLayout({
