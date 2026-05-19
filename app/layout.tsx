@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import NavBar from '@/app/ui/navbar/nav-bar';
 import './globals.css';
 
@@ -49,6 +50,7 @@ export default function RootLayout({
             <div className='px-6'>{children}</div>
           </div>
         </div>
+        <SpeedInsights />
       </body>
     </html>
   );
